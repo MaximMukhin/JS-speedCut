@@ -12,9 +12,7 @@
    <title>SpeedCut</title>
 </head>
 
-
 <header class="header">
-
    <h3>SpeedCut</h3>
    <div>
 
@@ -23,12 +21,12 @@
             <label for="">Кол-во ножей</label>
             <input class="input-knifle" type="number" placeholder="Ножей" value="">
          </div>
-   
+
          <div class="input-inner">
             <label for="">Подача в мм.</label>
             <input class="input-eat" type="number" placeholder="Подача" value="">
          </div>
-   
+
          <div class="input-inner">
             <label for="">Обороты в мин.</label>
             <input class="input-turns" type="number" placeholder="Обороты" value="">
@@ -36,11 +34,17 @@
       </div>
 
       <button class="btn-cut">Расчитать скорость</button>
-   <hr>
+      <hr>
       <div>Скорость подачи</div>
       <div class="sum-cut-speed">0</div>
    </div>
+   <hr>
+   <div class="help">
+      <h3 style="margin-bottom: 0px;">Пример</h3>
+      <p style="margin-top: 0px;">2 * 0.3 * 18000 = 10800 мм.мин получаем скорость фрезеровки 10800 мм.мин или 10м 80см</p>
+   </div>
 </header>
+
 <body>
 
    <script src="app.js"></script>
