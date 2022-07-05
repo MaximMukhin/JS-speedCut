@@ -7,39 +7,44 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <style>
-      body {
-         font-family: Arial, Helvetica, sans-serif;
-         align-items: center;
-         text-align: center;
-         max-width: 400px;
-         margin: 0 auto;
-      }
-   input {
-      width: 100px;
-   }
-   button {
-      margin-top: 20px;
-   }
-   
+
    </style>
    <title>SpeedCut</title>
 </head>
-<h3>SpeedCut program</h3>
 
-<section>
-   <input class="input-knifle" type="text" placeholder="Ножей" value="">
-   <input class="input-eat" type="text" placeholder="Подача" value="">
-   <input class="input-turns" type="text" placeholder="Обороты" value="">
 
-   <button class="btn-cut">Расчитать скорость</button>
-<hr>
-   <div>Скорость подачи</div>
-   <div class="sum-cut-speed">0</div>
-</section>
+<header class="header">
 
+   <h3>SpeedCut</h3>
+   <div>
+
+      <div class="inputs-wrapper">
+         <div class="input-inner">
+            <label for="">Кол-во ножей</label>
+            <input class="input-knifle" type="number" placeholder="Ножей" value="">
+         </div>
+   
+         <div class="input-inner">
+            <label for="">Подача в мм.</label>
+            <input class="input-eat" type="number" placeholder="Подача" value="">
+         </div>
+   
+         <div class="input-inner">
+            <label for="">Обороты в мин.</label>
+            <input class="input-turns" type="number" placeholder="Обороты" value="">
+         </div>
+      </div>
+
+      <button class="btn-cut">Расчитать скорость</button>
+   <hr>
+      <div>Скорость подачи</div>
+      <div class="sum-cut-speed">0</div>
+   </div>
+</header>
 <body>
 
    <script src="app.js"></script>
+
 </body>
 
 </html>
